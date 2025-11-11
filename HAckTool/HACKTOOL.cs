@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
-using System.Diagnostics;
 
 namespace Csharp_studies
 {
@@ -277,11 +276,6 @@ namespace Csharp_studies
                 Console.WriteLine(item);
                 Thread.Sleep(100);
             }
-            Process.Start(new System.Diagnostics.ProcessStartInfo
-            {
-                FileName = "https://youtu.be/xvFZjo5PgG0?si=-4jufGciLZMY-yFF",
-                UseShellExecute = true 
-            });
         }
 
 
@@ -294,7 +288,7 @@ namespace Csharp_studies
             {
                 Console.SetCursorPosition(cursorX, cursorY);
 
-                Console.Write($"{text}.   ");
+                Console.Write($"{text}.    ");
                 Thread.Sleep(500);
 
                 Console.SetCursorPosition(cursorX, cursorY);
